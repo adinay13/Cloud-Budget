@@ -1,0 +1,151 @@
+/* Брейк - поинты */
+/* <1250px и выше - Ноутбуки и Компьютеры */
+/* >1250px до 1025px - маленькие ноутбуки */
+/* >1024px до 768px- планшеты */
+/* >767px - мобильные устройства */
+/* 320px - Iphone 5se */
+
+.header
+    margin: 63px auto
+    width: 100%
+    position: absolute
+    z-index: 2
+    @media screen and (max-width: 767px)
+        position: absolute
+        top: -10px
+    @media screen and (max-width: 955px)
+        position: absolute
+        top: -30px
+    &__inner
+        display: flex
+        justify-content: space-around
+        flex-wrap: nowrap
+        align-items: center
+        a
+            text-decoration: none
+    &__logo
+        display: flex
+        justify-content: left
+        align-items: center
+        color: #fff
+        @media screen and (max-width: 767px)
+            font-size: 50px
+    &__title
+        color: #fff
+        padding-left: 10px
+        margin-right: 130px
+        font-family: Lato
+        font-weight: bold
+        font-size: 18px
+        line-height: 22px
+        @media screen and (max-width: 767px)
+            display: none
+
+.nav
+    @media screen and (max-width: 1040px)
+        margin-right: 40px
+    ul
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        list-style: none
+        li
+            text-transform: uppercase
+            a
+                text-decoration: none
+                color: #fff
+                font-family: Lato
+                font-size: 14px
+                font-weight: 400
+                line-height: 17px
+                text-align: left
+                padding-left: 20px
+                &:hover
+                    color: grey
+                @media screen and (max-width: 1050px)
+                    font-size: 12px
+                @media screen and (max-width: 955px)
+                    display: none
+
+.language
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    &__icon
+        padding-right: 11px
+        @media screen and (max-width: 767px)
+            width: 30px
+            height: 30px
+    &__select
+        display: inline-block
+        padding: 0 30px 0 0
+        appearance: none
+        overflow: hidden
+        background: url('/../icons/down.svg') no-repeat no-repeat right
+        cursor: pointer
+        color: #fff
+        border: none
+        outline: none
+        font-family: Lato
+        font-size: 14px
+        font-weight: 400
+        line-height: 17px
+        @media screen and (max-width: 767px)
+            font-size: 10px
+        option
+            background-color: #9c9191
+
+.footer
+    margin-top: 85px
+    height: 350px
+    @media screen and (max-width: 1025px)
+        height: 100%
+        margin-top: 300px
+    &__inner
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        @media screen and (max-width: 1025px)
+            text-align: center
+            height: 100%
+            margin-top: 50px
+    &__item
+        display: flex
+        flex-direction: column
+        flex: 0 0 25%
+        @media screen and (max-width: 1025px)
+            flex: 0 0 50%
+            margin-top: 30px
+            img
+                flex: 0 0 25%
+        h4
+            font-family: Lato
+            font-size: 18px
+            font-weight: 700
+            line-height: 22px
+            margin-bottom: 33px
+        a
+            font-family: Lato
+            font-size: 12px
+            font-weight: 400
+            line-height: 20px
+            letter-spacing: 0em
+            text-decoration: none
+            color: #000
+            &:hover
+                color: red
+    &__icons
+        margin-top: 30px
+        .fab.fa-facebook-f, .fab.fa-linkedin-in, .fab.fa-twitter
+            text-align: left
+            padding-right: 15px
+            &:hover
+                color: red
+.copyright
+    font-family: Lato
+    font-size: 12px
+    font-weight: 400
+    line-height: 14px
+    text-align: left
+    margin-top: 141px
